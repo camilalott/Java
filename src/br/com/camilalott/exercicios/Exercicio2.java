@@ -1,0 +1,55 @@
+package br.com.camilalott.exercicios;
+
+import javax.swing.JOptionPane;
+
+/**
+ * 2. Ler 3 valores numéricos e imprimir a soma dos 2 maiores e a diferença dos
+ * menores
+ * 
+ * @author Camila
+ *
+ */
+public class Exercicio2 {
+	public static void main(String[] args) {
+
+		// Lê três numeros do usuário
+		int numero1 = Integer.parseInt(JOptionPane
+				.showInputDialog("Informe o primeiro número: "));
+		int numero2 = Integer.parseInt(JOptionPane
+				.showInputDialog("Informe o segundo número: "));
+		int numero3 = Integer.parseInt(JOptionPane
+				.showInputDialog("Informe o terceiro número: "));
+
+		// Somar os dois maiores
+		int maior = numero1;
+		int meio= numero1;
+		int menor = numero1;
+		
+		if (numero2 > maior) {
+			meio = maior;
+			maior = numero2;
+		}else{
+			meio = numero2;
+		}
+		
+		if(numero3>maior){
+			menor = meio;
+			meio = maior;
+			maior = numero3;
+		}else{
+			if(numero3>meio){
+				menor = meio;
+				meio = numero3;
+			}else{
+				menor = numero3;
+			}
+		}
+		// Soma dos numero maiores
+		int soma = maior + meio;
+		JOptionPane.showMessageDialog(null,"A soma dos maiores e: " + soma);
+	
+		int diferenca = meio - menor;
+		JOptionPane.showMessageDialog(null,"A soma dos maiores e: " + diferenca);
+	
+	}
+}
