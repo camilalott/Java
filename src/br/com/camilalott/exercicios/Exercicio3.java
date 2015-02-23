@@ -1,5 +1,7 @@
 package br.com.camilalott.exercicios;
 
+import javax.swing.JOptionPane;
+
 /**
  * 3. Ler dois valores de hora, minuto e segundo (h1, m1, s1, h2, m2, s2). Em
  * seguida imprimir o intervalo entre esses dois horários em hora, minuto e
@@ -13,12 +15,18 @@ public class Exercicio3 {
 	public static void main(String[] args) {
 
 		// Ler as horas, minutos e segundos. Seis variaveis.
-		int h1 = 40;	
-		int m1 = 30;
-		int s1 = 4;
-		int h2 = 2;
-		int m2 = 40;
-		int s2 = 3;
+		int h1 = Integer.parseInt(JOptionPane
+				.showInputDialog("Informe as horas do primeiro horario: "));	
+		int m1 = Integer.parseInt(JOptionPane
+				.showInputDialog("Informe os minutos do primeiro horario: "));	
+		int s1 = Integer.parseInt(JOptionPane
+				.showInputDialog("Informe os segundos do primeiro horario: "));	
+		int h2 = Integer.parseInt(JOptionPane
+				.showInputDialog("Informe as horas do segundo horario: "));	
+		int m2 = Integer.parseInt(JOptionPane
+				.showInputDialog("Informe os minutos do segundo horario: "));	
+		int s2 = Integer.parseInt(JOptionPane
+				.showInputDialog("Informe os segundos do segundo horario: "));	
 
 		// Converter os horarios em segundos. Atencao repita esse processo para
 		// o segundo horario.
