@@ -3,24 +3,24 @@ package br.com.camilalott.exercicios;
 import javax.swing.JOptionPane;
 
 /**
- * Esta primeira linha de marcador, por padrão nunca faça nada nela. Esse é o
- * padrão do JavaDoc. Sempre que for comentar, faça dessa maneira.
+ * Esta primeira linha de marcador, por padrao nunca faca nada nela. Esse e o
+ * padrao do JavaDoc. Sempre que for comentar, faca dessa maneira.
  * 
- * Exercício 1. Ler 3 valores inteiros do usuário e mostrar o maior deles, o
- * menor deles e a média.
+ * Exercicio 1. Ler 3 valores inteiros do usuario e mostrar o maior deles, o
+ * menor deles e a media.
  * 
  * @author Camila
  * 
  */
 public class Exercicio1 {
 	public static void main(String[] args) {
-		// Lê três numeros do usuário
+		// Ler tres numeros do usuario
 		int numero1 = Integer.parseInt(JOptionPane
-				.showInputDialog("Informe o primeiro número: "));
+				.showInputDialog("Informe o primeiro nï¿½mero: "));
 		int numero2 = Integer.parseInt(JOptionPane
-				.showInputDialog("Informe o segundo número: "));
+				.showInputDialog("Informe o segundo nï¿½mero: "));
 		int numero3 = Integer.parseInt(JOptionPane
-				.showInputDialog("Informe o terceiro número: "));
+				.showInputDialog("Informe o terceiro nï¿½mero: "));
 
 		// Mostrar o numero maior
 		int maior = numero1;
@@ -33,19 +33,10 @@ public class Exercicio1 {
 			maior = numero3;
 		}
 
-		JOptionPane.showMessageDialog(null, "O maior número é: " + maior);
+		JOptionPane.showMessageDialog(null, "O maior numero e: " + maior);
 
-		System.out.println("O maior número é:" + maior);
+		System.out.println("O maior numero e:" + maior);
 
-		/*
-		 * NAO FAZER ISSO EM CODIGO DE PRODUCAO, POLUI O CODIGO, E TORNANDO MAIS
-		 * DIFICIL. int maior =0;
-		 * 
-		 * if(numero1>=numero2){ maior = numero1; }else{ maior = numero2; }
-		 * 
-		 * if(numero3>maior){ maior = numero3;
-		 */
-		// Mostrar o numero menor
 
 		int menor = numero1;
 
@@ -57,16 +48,16 @@ public class Exercicio1 {
 			menor = numero3;
 		}
 
-		JOptionPane.showMessageDialog(null, "O menor número é: " + menor);
+		JOptionPane.showMessageDialog(null, "O menor numero e: " + menor);
 
 		// Mostrar a media dos 3 numeros
-		// Como os numero sao inteiros, se for dividir só por 3, o Java entende
-		// que a reposta será em inteiro e trunca a casa decimal. Para quebrar
+		// Como os numero sao inteiros, se for dividir sï¿½ por 3, o Java entende
+		// que a reposta serï¿½ em inteiro e trunca a casa decimal. Para quebrar
 		// isso basta colocar o numero da divisao em double. Ex: 3.0
 		double media = 0.0;
 		media = ((numero1 + numero2 + numero3) / 3.0);
 
-		JOptionPane.showMessageDialog(null, "A média é: " + media);
+		JOptionPane.showMessageDialog(null, "A media e: " + media);
 
 		System.out.println(media);
 	}
