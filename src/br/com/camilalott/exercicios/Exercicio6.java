@@ -38,5 +38,6 @@ public class Exercicio6 {
 
 		System.out.println("O salario bruto é: " + salarioBruto
 				+ "\nEo salario liquido é: " + salarioLiquido);
+	
 	}
 }
