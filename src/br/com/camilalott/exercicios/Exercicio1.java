@@ -34,9 +34,7 @@ public class Exercicio1 {
 		}
 
 		JOptionPane.showMessageDialog(null, "O maior numero e: " + maior);
-
 		System.out.println("O maior numero e:" + maior);
-
 
 		int menor = numero1;
 
@@ -58,7 +56,6 @@ public class Exercicio1 {
 		media = ((numero1 + numero2 + numero3) / 3.0);
 
 		JOptionPane.showMessageDialog(null, "A media e: " + media);
-
 		System.out.println(media);
 	}
 }
