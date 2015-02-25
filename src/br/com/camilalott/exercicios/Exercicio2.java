@@ -3,7 +3,7 @@ package br.com.camilalott.exercicios;
 import javax.swing.JOptionPane;
 
 /**
- * 2. Ler 3 valores numéricos e imprimir a soma dos 2 maiores e a diferença dos
+ * 2. Ler 3 valores numericos e imprimir a soma dos 2 maiores e a diferenca dos
  * menores
  * 
  * @author Camila
@@ -12,13 +12,13 @@ import javax.swing.JOptionPane;
 public class Exercicio2 {
 	public static void main(String[] args) {
 
-		// Lê três numeros do usuário
+		// Ler tres numeros do usuario
 		int numero1 = Integer.parseInt(JOptionPane
-				.showInputDialog("Informe o primeiro número: "));
+				.showInputDialog("Informe o primeiro nï¿½mero: "));
 		int numero2 = Integer.parseInt(JOptionPane
-				.showInputDialog("Informe o segundo número: "));
+				.showInputDialog("Informe o segundo nï¿½mero: "));
 		int numero3 = Integer.parseInt(JOptionPane
-				.showInputDialog("Informe o terceiro número: "));
+				.showInputDialog("Informe o terceiro nï¿½mero: "));
 
 		// Somar os dois maiores
 		int maior = numero1;
